@@ -1,0 +1,15 @@
+<h2>Por Country</h2>
+<div class="row">
+  <div class="col">
+      <search-box
+      (onValue)="searchByCountry($event)"
+      placeholder="Buscar por capital"></search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <contry-table [countries]="countries" ></contry-table>
+
+  </div>
+</div>
