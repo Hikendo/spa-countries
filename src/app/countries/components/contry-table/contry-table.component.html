@@ -36,7 +36,8 @@
             <td>{{country.name.common}}</td>
             <td>{{country.capital}}</td>
             <td>{{country.population | number}}</td>
-            <td><button class="btn btn-success">Show more...</button></td>
+            <td><button [routerLink]="['/countries/by/',country.cca3]"
+              class="btn btn-success">Show more...</button></td>
           </tr>
 
         </tbody>
