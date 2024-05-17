@@ -1,0 +1,15 @@
+.spinner-component{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+span{
+  background-color: black;
+
+  margin-left: 15px;
+}

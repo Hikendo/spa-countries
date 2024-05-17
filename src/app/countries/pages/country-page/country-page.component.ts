@@ -12,6 +12,8 @@ import { Countries } from '../../interfaces/countries';
 export class CountryPageComponent implements OnInit{
 
   public country? : Countries;
+  public isLoading:boolean=true;
+
   constructor(private activatedRoute: ActivatedRoute,
     private countriesService:CountriesService,
     private router: Router
@@ -30,7 +32,9 @@ export class CountryPageComponent implements OnInit{
                 return this.router.navigateByUrl('by-country')
               }
               return this.country= countryArray;
-          })
+          });
+          this.isLoading=false;
+
   }
   searchCountry( code: string){
     this.countriesService.searchByAlphaCode(code)

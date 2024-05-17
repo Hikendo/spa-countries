@@ -7,6 +7,7 @@ import { CountryPageComponent } from './pages/country-page/country-page.componen
 import { CountriesRoutingModule } from './countries-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { ContryTableComponent } from './components/contry-table/contry-table.component';
+import { LoadingSpinnerComponent } from '../shared/components/loading-spinner/loading-spinner.component';
 
 
 
@@ -16,7 +17,7 @@ import { ContryTableComponent } from './components/contry-table/contry-table.com
     ByCountryPageComponent,
     ByRegionPageComponent,
     CountryPageComponent,
-    ContryTableComponent,
+    ContryTableComponent
   ],
   imports: [
     CommonModule,

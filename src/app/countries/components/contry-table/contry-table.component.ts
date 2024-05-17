@@ -7,7 +7,6 @@ import { Countries } from '../../interfaces/countries';
   styleUrl: './contry-table.component.css'
 })
 export class ContryTableComponent {
-
   @Input()
   public countries: Countries[]=[];
 }

@@ -1,8 +1,10 @@
+<!--(keyup.enter)="emmitSearch(InputSearch.value)"-->
 <div class="input-group">
   <div class="form-outline" data-mdb-input-init>
     <label class="form-label" for="form1">Buscar</label>
     <input type="search" id="form1"
-    (keyup.enter)="emmitSearch(InputSearch.value)"
+
+    (keyup)="onKeyPress(InputSearch.value)"
       #InputSearch
     class="form-control" [placeholder]="placeholder" />
   </div>

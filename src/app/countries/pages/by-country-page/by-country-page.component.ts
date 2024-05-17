@@ -9,6 +9,9 @@ import { CountriesService } from '../../services/countries.service';
 })
 export class ByCountryPageComponent {
   public countries:Countries[]=[];
+  public isLoading:boolean=true;
+
+
   constructor(private countriesService:CountriesService){
 
   }
@@ -17,6 +20,7 @@ export class ByCountryPageComponent {
     .subscribe(
       countries => {
         this.countries= countries;
+        this.isLoading=false;
       }
     );
     //alert('capital '+value);
