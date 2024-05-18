@@ -5,7 +5,9 @@
       (onValue)="searchByCountry($event)"
       (onDebounce)="searchByCountry($event)"
 
-      placeholder="Buscar por capital"></search-box>
+      placeholder="Buscar por capital"
+      [initialValue]="initialValue"
+      ></search-box>
   </div>
 </div>
 <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>

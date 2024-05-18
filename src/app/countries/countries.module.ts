@@ -8,6 +8,7 @@ import { CountriesRoutingModule } from './countries-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { ContryTableComponent } from './components/contry-table/contry-table.component';
 import { LoadingSpinnerComponent } from '../shared/components/loading-spinner/loading-spinner.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +23,8 @@ import { LoadingSpinnerComponent } from '../shared/components/loading-spinner/lo
   imports: [
     CommonModule,
     CountriesRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class CountriesModule { }

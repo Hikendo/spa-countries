@@ -1,11 +1,21 @@
 <h2>Por Region</h2>
 <div class="row">
   <div class="col">
-      <search-box
-      (onValue)="searchByRegion($event)"
-      (onDebounce)="searchByRegion($event)"
+      <!---->
+      <div class="input-group mb-6">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Regions</label>
+        </div>
+        <select (change)="searchByRegion($event)"
+        [(ngModel)]="selectedOption"
+        class="custom-select" id="inputGroupSelect01">
+          <option *ngFor="let region of regions" [value]="region"
 
-      placeholder="Buscar por capital"></search-box>
+          >
+            {{region}}</option>
+
+        </select>
+      </div>
   </div>
 </div>
 <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
